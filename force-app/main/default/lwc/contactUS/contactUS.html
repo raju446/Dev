@@ -1,0 +1,13 @@
+<template>
+     <lightning-card>
+          <div class="slds-p-around_medium">
+         <lightning-input label="Name" type="Text" value={Name} onchange={handleNameChange}></lightning-input>
+         <lightning-input label="Phone" type="Phone"  value={Phone} onchange={handlePhoneChange}></lightning-input>
+         <lightning-input label="Email"  type="Email" value={Email} onchange={handleEmailChange}></lightning-input>
+         <lightning-combobox label="Reason" type="Picklist" value={Reason} options={reasonOptions} onchange={handleReasonChange}></lightning-combobox>
+         <lightning-input label="Subject" value={Subject} onchange={handleSubjectChange}></lightning-input>
+         <lightning-textarea label="Description" value={Description} onchange={handleDescriptionChange}></lightning-textarea>
+         <lightning-button label="Subit" onclick={createCase} variant="Brand" style="text-align: center;"></lightning-button>
+     </div>
+     </lightning-card>
+ </template>
